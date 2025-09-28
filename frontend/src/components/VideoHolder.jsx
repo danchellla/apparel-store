@@ -20,7 +20,7 @@ const VideoHolder = () => {
           ELEVATE YOUR <span className="text-accent">STYLE</span>
         </h1>
         <p className="text-xl max-w-2xl mb-8">
-          Where fashion meets jazz in perfect harmony
+          Your grooming partner
         </p>
         <button className="px-8 py-3 bg-gradient-to-r from-accent to-[#ff4e50] rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
           Explore Collection

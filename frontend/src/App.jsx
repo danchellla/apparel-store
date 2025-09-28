@@ -20,7 +20,7 @@ const App = () => {
       <ProductsProvider>
         <CartProvider>
           <Router>
-            <div className="min-h-screen bg-gradient-to-br from-[#1a1a2e] to-[#16213e] transition-colors duration-500">
+            <div className="min-h-screen bg-gradient-to-br from-white to-slate-50 transition-colors duration-500">
               <Navbar />
               <div className="max-w-7xl mx-auto pt-24 px-4">
                 <Routes>

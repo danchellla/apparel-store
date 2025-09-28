@@ -1,11 +1,11 @@
 :root {
-  --primary: #1a1a2e;
-  --secondary: #16213e;
-  --accent: #f9a826;
-  --text: #f0f0f0;
-  --glass-bg: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.18);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --primary: #ffffff;
+  --secondary: #f8fafc;
+  --accent: #3b82f6;
+  --text: #1e293b;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(226, 232, 240, 0.6);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 * {

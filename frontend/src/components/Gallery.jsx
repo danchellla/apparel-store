@@ -3,10 +3,17 @@ import GlassCard from './GlassCard';
 
 const Gallery = () => {
   const products = [
-    { id: 1, name: 'Saxophone Sneakers', price: '$129', category: 'Footwear' },
-    { id: 2, name: 'Trumpet Tailcoat', price: '$249', category: 'Formal' },
-    { id: 3, name: 'Piano Pleat Skirt', price: '$89', category: 'Bottoms' },
-    { id: 4, name: 'Drummer Denim Jacket', price: '$159', category: 'Outerwear' },
+    { id: 1, name: 'Saxophone Sneakers', price: 'Ksh129', category: 'Footwear', image: '/SB/1.png'},
+    { id: 2, name: 'Trumpet Tailcoat', price: 'Ksh249', category: 'Formal', image: '/SB/2.png'},
+    { id: 3, name: 'Piano Pleat Skirt', price: 'Ksh89', category: 'Bottoms', image: '/SB/3.png'},
+    { id: 4, name: 'Drummer Denim Jacket', price: 'Ksh159', category: 'Outerwear', image: '/SB/4.png'},
+    { id: 5, name: 'fifth wear', price: 'Ksh559', category:'Dresses', image: '/SB/5.png'},
+    { id: 6, name: 'sixth wear', price: 'Ksh759', category:'Dresses', image: '/SB/6.png'},
+    { id: 7, name: 'seventh wear', price: 'Ksh510', category:'Dresses', image: '/SB/7.png'},
+    { id: 8, name: 'eighth wear', price: 'Ksh659', category:'Dresses', image: '/SB/8.png'},
+    { id: 9, name: 'nineth wear', price: 'Ksh553', category:'Dresses', image: '/SB/9.png'},
+    { id: 10, name: 'tenth wear', price: 'Ksh1,559', category:'Dresses', image: '/SB/black-white-stripes'},
+    { id: 11, name: 'eleventh wear', price: 'Ksh1,099', category:'Dresses', image: '/SB/lavender.png'}
   ];
 
   return (
@@ -18,12 +25,11 @@ const Gallery = () => {
           {products.map((product) => (
             <GlassCard key={product.id} className="overflow-hidden">
               <div className="aspect-square bg-gray-200 rounded-t-lg overflow-hidden">
-                {/* Product image placeholder */}
-                <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] to-[#16213e] flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
                 <span className="text-sm text-accent">{product.category}</span>
